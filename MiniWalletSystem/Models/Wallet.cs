@@ -16,5 +16,6 @@ namespace MiniWalletSystem.Models
         //Navigation properties
         public User Owner { get; set; }
 
+        public ICollection<WalletTransaction> walletTransactions { get; set; } = new List<WalletTransaction>();
     }
 }

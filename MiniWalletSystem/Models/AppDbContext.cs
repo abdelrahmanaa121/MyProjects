@@ -12,6 +12,7 @@ namespace MiniWalletSystem.Models
         //Define Tables Created in DB
         public DbSet<User> users { get; set; }
         public DbSet<Wallet> wallets { get; set; }
+        public DbSet<WalletTransaction> walletTransactions { get; set; }
         //connection and Configuring
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
